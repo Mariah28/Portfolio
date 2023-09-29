@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: #0c142f;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1 {
+    color: #9f9ca2;
+    font-size: 2.5rem;
+}
+
+header span {
+    color: #fff;
+}
+
+header .navegacao-primaria {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .navegacao-primaria li a {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+
+.section-div {
+    animation: inicializar .7s forwards;
+    background-color: #a10607;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div {
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 30px;
+}
+ 
+.section-div div h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #f7f7f7;
+}
+
+.section-div div p {
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: #fff;
+}
+
+.img-circle {
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.digitando::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+}
+
+@keyframes pisca {
+    from {
+        opacity: 1;        
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/** Card **/
+.card {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.card li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.card li:hover{
+    border-color: #a10607;
+}
+
+.card li:active{
+    border-color: #0c142f;
+}
+
+.card li:hover h2{
+    font-size: 34px;
+}
+
+.card h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/** Icon **/
+.icon {
+    margin-bottom: 20px;
+}
+
+#imgProjeto {
+    width: 150px;
+}
+
+.icon img {
+    width: 250px;
+}
+
+
+
+
